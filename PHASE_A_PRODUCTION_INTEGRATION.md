@@ -13,7 +13,7 @@ Move from simulated tool generation to **REAL** OpenHands execution with Gemini 
 ```toml
 [llm]
 model = "gemini/gemini-2.5-pro"
-api_key = "AIzaSyD9oJD1eFsyVoHn0r5PY96zYxii0ksFcR8"
+api_key = "${GEMINI_API_KEY}"  # Set via environment variable
 temperature = 0.2
 max_output_tokens = 8192
 
@@ -164,7 +164,7 @@ Gemini Planning → [REAL OpenHands + Gemini] → Real Validation
 
 3. **Environment Variables**:
    ```bash
-   export GEMINI_API_KEY=AIzaSyD9oJD1eFsyVoHn0r5PY96zYxii0ksFcR8
+   export GEMINI_API_KEY=your_api_key_here
    ```
 
 ### Run Real End-to-End
